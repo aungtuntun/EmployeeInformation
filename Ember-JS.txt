@@ -1,0 +1,62 @@
+ember js
+ 
+ npm install -g ember-cli@2.15
+ ember new appname
+ cd appname
+ ember serve || ember s
+ 
+ You can find a list of debugging options in ./config/environment.js file. Remove the comment signs for the code to read as follows:
+
+//..
+if (environment === 'development') {
+  // ENV.APP.LOG_RESOLVER = true;
+  ENV.APP.LOG_ACTIVE_GENERATION = true;
+  ENV.APP.LOG_TRANSITIONS = true;
+  ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+  ENV.APP.LOG_VIEW_LOOKUPS = true;
+}
+
+$ ember install ember-cli-sass
+$ ember install ember-cli-bootstrap-sassy
+ 
+$ ember generate route scientists -- generate route
+$ ember generate template navbar -- generate template
+$ ember g controller index -- generate controller for route, must same with route name
+$ ember g model invitation email:string -- creating ember model with variable and data type
+$ ember g model tag -- creating model without variable
+$ ember install emberfire   -- install ember fire for firebase
+$ ember g route admin/invitations  -- route and page for admin account
+$ ember g http-mock tags -- create http-mock
+$ ember g adapter application -- generate default adapter for application 
+$ ember g route application -- generate main route 
+$ ember g route index -- for first page 
+$ ember install ember-cli-mirage -- library for as a source of data rather than backend server only testing
+
+$ ember destroy -- uninstall component/route/controller/model/ opposite of generate
+
+
+  <article class="listing">
+        <h3>{{rental.title}}</h3>
+        <div class="detail id">
+            <span>ID :</span> {{rental.id}}
+        </div>
+        <div class="detail name">
+            <span>Name :</span> {{rental.name}}
+        </div>
+        <div class="detail title">
+            <span>Title :</span> {{rental.title}}
+        </div>
+        <div class="detail owner">
+            <span>Owner :</span> {{rental.owner}}
+        </div>
+        <div class="detail city">
+            <span>City :</span> {{rental.city}}
+        </div>
+        <div class="detial salary">
+            <span>Salary : </span> {{rental.salary}}
+        </div>
+    </article>
+	
+	 {{#each model as |rentalUnit|}}
+  {{rental-listing rental=rentalUnit}}
+ {{/each}}

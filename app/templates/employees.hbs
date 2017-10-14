@@ -1,0 +1,20 @@
+<div class="jumbo">
+    <div class="right tomster"> </div>
+         <h2>Welcome!</h2>
+        <p>We are here!</p>    
+</div>
+
+{{#list-filter filter=(action 'filterByPosition')  as |employees|}}
+<ul class="results">
+    <div class="listing">
+  <em> <span>ID </span>  <span>Name </span> <span>Owner </span><span>Title </span> <span>Position </span>
+    <span>Department </span><span>City </span> <span>Salary </span></em> 
+</div>
+{{#each employees as |employeeData|}}
+<li>{{employee-listing employee=employeeData}} </li>
+{{/each}}
+</ul>
+{{/list-filter}}
+ 
+
+

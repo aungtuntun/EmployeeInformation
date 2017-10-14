@@ -1,0 +1,56 @@
+ 
+$ ember g component list-filter
+ 
+$ ember g route rentals
+ 
+$ ember g route about
+ 
+$ ember g route contact
+ 
+$ ember g route index
+ 
+$ ember install ember-cli-tutorial-style
+ 
+$ ember install ember-cli-mirage
+ 
+$ ember g adapter application
+ 
+$ ember g component rental-listing
+ 
+$ ember g helper rental-property-type // no need
+npm install http-server -g
+
+
+ember g model person
+ember install ember-cli-tutorial-style
+
+$ ember new EmployeeInformation
+$ cd EmployeeInformation
+$ ember serve
+$ ember g route about
+$ ember g route contact
+$ ember g route rentals // 2
+$ ember g route index   // 3
+$ ember install ember-cli-tutorial-style
+$ ember install ember-cli-mirage  // 8
+$ ember g adapter application // 4
+$ ember g component rental-listing  // 5
+$ ember g helper rental-property-type // no need
+$ ember g model rental  // 1
+$ ember g component list-filter  // 7
+$ ember g controller rentals  // 6
+
+
+$ ember g model employee
+
+$ ember g route employees
+
+$ ember g route index
+
+$ ember g adapter application
+
+$ ember g component employee-listing
+
+$ ember g controller employees
+
+$ ember g component list-filter
